@@ -3,6 +3,7 @@ defmodule GcStorage.Mixfile do
 
   def project do
     [app: :gc_storage,
+     description: "Elixir wrapper for Google Cloud Storage Wrapper",
      version: "0.2.0",
      elixir: "~> 1.3",
      build_embedded: Mix.env == :prod,
@@ -28,12 +29,12 @@ defmodule GcStorage.Mixfile do
   #
   # Type "mix help deps" for more examples and options
   defp deps do
-    [{:goth, "~> 0.2.1"}]
+    [{:goth, "~> 0.2.1"}, {:ex_doc, ">= 0.0.0", only: :dev}]
   end
 
   defp package do
     [
-      files: ["lib", "mix.exs", "README", "LICENSE*"],
+      files: ["lib", "mix.exs", "README.md"],
       maintainers: ["Ping"],
       licenses: ["Apache 2.0"],
       links: %{"GitHub" => "https://github.com/seymores/gc_storage"}
