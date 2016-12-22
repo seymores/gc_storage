@@ -7,7 +7,8 @@ defmodule GcStorage.Mixfile do
      elixir: "~> 1.3",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
-     deps: deps()]
+     deps: deps(),
+     package: package]
   end
 
   # Configuration for the OTP application
@@ -29,4 +30,14 @@ defmodule GcStorage.Mixfile do
   defp deps do
     [{:goth, "~> 0.2.1"}]
   end
+
+  defp package do
+    [
+      files: ["lib", "mix.exs", "README", "LICENSE*"],
+      maintainers: ["Ping"],
+      licenses: ["Apache 2.0"],
+      links: %{"GitHub" => "https://github.com/seymores/gc_storage"}
+    ]
+  end
+
 end

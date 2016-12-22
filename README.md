@@ -1,16 +1,19 @@
 # GcStorage
 
-**TODO: Add description**
+Elixir wrapper for Google Cloud Storage API.
+
+## Configuration
+
+1. See [goth](https://github.com/peburrows/goth) for credential configuration.
+2. Paramters (TODO)
 
 ## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
 
   1. Add `gc_storage` to your list of dependencies in `mix.exs`:
 
     ```elixir
     def deps do
-      [{:gc_storage, "~> 0.1.0"}]
+      [{:gc_storage, "~> 0.2.0"}]
     end
     ```
 
@@ -21,4 +24,3 @@ If [available in Hex](https://hex.pm/docs/publish), the package can be installed
       [applications: [:gc_storage]]
     end
     ```
-
