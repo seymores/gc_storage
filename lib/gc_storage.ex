@@ -1,0 +1,2 @@
+defmodule GcStorage do
+end
