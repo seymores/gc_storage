@@ -1,11 +1,11 @@
 # GcStorage
 
-Elixir wrapper for Google Cloud Storage API.
+Elixir wrapper for [Google Cloud Storage API](https://cloud.google.com/storage/docs/json_api/).
 
 ## Configuration
 
-1. See [goth](https://github.com/peburrows/goth) for credential configuration.
-2. Paramters (TODO)
+1. Make sure you have your credential json from GCE account in config/. See [goth](https://github.com/peburrows/goth) for credential configuration.
+2. Parameters (TODO)
 
 ## Installation
 
@@ -24,3 +24,9 @@ Elixir wrapper for Google Cloud Storage API.
       [applications: [:gc_storage]]
     end
     ```
+
+## Usage
+
+
+    iex> GcStorage.post_file("./README.md", "text/plain", "bucket_name", "README.md")
+    {:ok, "https://storage.googleapis.com/bucket_name/README.md"}
